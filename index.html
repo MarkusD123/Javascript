@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Marek Dembicky-->
+  <!--marodembo@gmail.com-->
+  <!--Mark D. = DiscordJmeno-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./query.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Project nr3 Engeto - html, CSS, JS</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="img-logo" />
+      </div>
+      <div class="switcher-box">
+        <span class="switcher-description">
+          <p>Light mode</p>
+          <i class="fa-regular fa-sun"></i>
+          <!-- <i class="fa-regular fa-moon"></i> -->
+        </span>
+        <!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="name">Hala Bala Agency</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Properties</a></li>
+          <li><a href="#">Our Team</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <section class="welcome-section">
+      <div class="welcome-wrapper">
+        <h1 class="welcome-text">Properties<br />for Relax</h1>
+      </div>
+    </section>
+    <section class="section1">
+      <div class="box-card">
+        <h2>House in Tenerife</h2>
+        <div class="box-img-container">
+          <img class="box-img" src="./img/house1.jpg" alt="" />
+        </div>
+        <p>
+          Featuring house swimming pool and views of sea, Tenerife house is a
+          recently renovated.
+        </p>
+        <div class="info-icons">
+          <div class="bed-container">
+            <i class="fa-solid fa-bed"></i><span> 5 </span>
+          </div>
+          <div class="bed-container">
+            <i class="fa-solid fa-bath"></i><span> 3 </span>
+          </div>
+          <div class="bed-container">
+            <i class="fa-solid fa-couch"></i><span> 2 </span>
+          </div>
+        </div>
+        <div class="price">Offer over 700,000 Euro</div>
+        <button type="button" class="order-button">View details</button>
+      </div>
+      <div class="box-card">
+        <h2>Florida house</h2>
+        <div class="box-img-container">
+          <img class="box-img" src="./img/house2.jpg" alt="" />
+        </div>
+        <p>
+          Island house is a property with a private pool, located in Florida,
+          within just 10 m of beach.
+        </p>
+        <div class="info-icons">
+          <div class="bed-container">
+            <i class="fa-solid fa-bed"></i><span> 3 </span>
+          </div>
+          <div class="bed-container">
+            <i class="fa-solid fa-bath"></i><span> 2 </span>
+          </div>
+          <div class="bed-container">
+            <i class="fa-solid fa-couch"></i><span> 1 </span>
+          </div>
+        </div>
+        <div class="price">Offer over 900,000 Euro</div>
+
+        <button type="button" class="order-button">View details</button>
+      </div>
+      <div class="box-card">
+        <h2>Okinawa house</h2>
+        <div class="box-img-container">
+          <img class="box-img" src="./img/house3.jpg" alt="" />
+        </div>
+        <p>
+          Offering house pool and views of the ocean, Apartments for buy in
+          Japan, Okinawa.
+        </p>
+        <div class="info-icons">
+          <div class="bed-container">
+            <i class="fa-solid fa-bed"></i><span> 4 </span>
+          </div>
+          <div class="bed-container">
+            <i class="fa-solid fa-bath"></i><span> 4 </span>
+          </div>
+          <div class="bed-container">
+            <i class="fa-solid fa-couch"></i><span> 1 </span>
+          </div>
+        </div>
+        <div class="price">Offer over 400,000 Euro</div>
+
+        <button type="button" class="order-button">View details</button>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="section2-photo">
+        <div class="section2-photo-wrapper"></div>
+      </div>
+      <div class="section2-formular">
+        <form class="formular1">
+          <h2>Sign in</h2>
+          <input type="email" class="email1" placeholder="Email" /><br />
+          <input
+            type="text"
+            class="password1"
+            placeholder="Your password"
+          /><br />
+          <input
+            type="text"
+            class="password2"
+            placeholder="Your password validation"
+          /><br />
+          <input type="submit" class="sign-up" value="Sign-up" />
+        </form>
+        <div class="result-section2"></div>
+
+        <img class="scroll-up-img" src="./img/scroll-up-icon.jpg" />
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="contact-adress-container">
+          <div>Adress - Main office:</div>
+          <p>Hala Bala - Real estate agency</p>
+          <p>Fiction street 33</p>
+          <p>Scotland</p>
+        </div>
+        <div class="contacts-container">
+          <div>Contacts</div>
+          <div class="phone-container">
+            <div class="phone-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <p>123 454 321</p>
+          </div>
+          <div class="email-container">
+            <div class="email-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email-link">
+              <a href="#">info@halabala.ccc</a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <div class="facebook-container">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="twitter-container">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="instagram-container">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="sign-up-container">
+          <div>Enter your email for our latest news</div>
+          <form class="formular2">
+            <input
+              class="sign-up-email"
+              type="email"
+              placeholder="your email"
+            />
+            <input type="submit" class="sign-up-button" />
+          </form>
+          <div class="result-foot"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

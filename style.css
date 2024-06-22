@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: black;
+  --secondary-color: lightgray;
+  --background-color: white;
+  --nav-color: lightgreen;
+  --button-backcolor: lightblue;
+}
+[data-theme="dark"] {
+  --primary-color: white;
+  --secondary-color: darkgray;
+  --background-color: black;
+  --nav-color: darkgreen;
+  --button-backcolor: darkblue;
+}
+
+body {
+  background-color: var(--background-color);
+}
+/* Header  */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-color);
+  color: var(--primary-color);
+  height: 70px;
+}
+.logo {
+  height: 70px;
+  width: 100px;
+  flex-grow: 0;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+nav ul {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+.switcher-box {
+  display: flex;
+  align-items: center;
+}
+.switcher-description {
+  display: flex;
+}
+.switcher-description p,
+.switcher-description i {
+  font-size: 15px;
+  color: var(--primary-color);
+}
+/* Dark-Light mode */
+/* The switch - the box around the slider */
+/* copied from: https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--secondary-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--secondary-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* welcome-section */
+.welcome-section {
+  height: calc(80vh - 70px);
+  background-image: url("./img/holliday-cottage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.welcome-wrapper {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.welcome-text {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+/* Section 1 - with 3 box-containers*/
+.section1 {
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.box-card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+}
+
+.box-img-container {
+  margin: 10px 10px;
+  margin-bottom: 1rem;
+}
+.box-img {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+.info-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px 0;
+}
+.order-button {
+  margin-top: 1rem;
+  background-color: var(--button-backcolor);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  font-weight: 700;
+}
+/* Section 2 - with formular */
+.section2 {
+  height: 50vh;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  color: var(--primary-color);
+}
+.section2-photo {
+  height: 90%;
+  margin: 0 10px;
+  flex-basis: calc(100% / 2 - 10px / 2);
+  background-image: url("./img/beach.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section2-formular {
+  height: 90%;
+  margin: 0 10px;
+  flex-basis: calc(100% / 2 - 10px / 2);
+}
+.formular1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.formular1 h2 {
+  padding-bottom: 10px;
+}
+.email1,
+.password1,
+.password2 {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline: none;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Scroll-up */
+.scroll-up-img {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  visibility: hidden;
+}
+
+/* Footer section */
+footer {
+  background-color: var(--secondary-color);
+  height: 70px;
+  color: var(--primary-color);
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 5px;
+}
+.phone-container,
+.email-container {
+  display: flex;
+  gap: 10px;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.formular2 {
+  font-size: 3px;
+  margin-top: 5px;
+}
+.sign-up-button,
+.sign-up {
+  background-color: var(--button-backcolor);
+  color: var(--primary-color);
+  border: 0.5px solid var(--primary-color);
+  padding: 1px 5px;
+  border-radius: 5px;
+}

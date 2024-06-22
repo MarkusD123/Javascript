@@ -1,0 +1,36 @@
+/* header section view for display < 600px */
+
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    margin-top: 70px;
+    background-color: #15304c;
+    width: 100%;
+  }
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 23px;
+  }
+}
+/* welcome section view for display < 600px */
+@media (max-width: 600px) {
+  .welcome-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .welcome-text {
+    font-size: 10px;
+  }
+}
+/* box-card section */
+@media (min-width: 600px) {
+  .section1 {
+    display: flex;
+    flex-basis: calc(100% / 3 - 20px / 2);
+  }
+}
